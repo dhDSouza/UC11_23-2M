@@ -1,26 +1,22 @@
-📌 Desafio: Sistema de Controle de Estoque
+# 📌 Desafio: Sistema de Controle de Estoque
 
-🎯 Objetivo
+## 🎯 Objetivo
 
 Você recebeu um código incompleto de um Sistema de Controle de Estoque. Seu desafio é:
 
-1. Criar testes unitários usando JUnit para verificar se o código funciona corretamente.
-
+1. Criar testes unitários usando `JUnit` para verificar se o código funciona corretamente.
 
 2. Identificar erros e inconsistências no código.
 
-
 3. Corrigir os problemas encontrados.
 
+>[!IMPORTANT]
+>**Não confie no código! Teste tudo antes de assumir que está certo.**
 
 
-📢 Dica: Não confie no código! Teste tudo antes de assumir que está certo.
+## 📂 Código do Sistema de Estoque (com erros escondidos)
 
-
----
-
-📂 Código do Sistema de Estoque (com erros escondidos)
-
+```java
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,27 +44,28 @@ public class Estoque {
         return produtos.get(nome);
     }
 }
-
-
----
-
-📝 O que você deve fazer?
-
-1️⃣ Criar um arquivo de teste JUnit chamado EstoqueTest.java.
-2️⃣ Criar métodos de teste para cada funcionalidade do estoque.
-3️⃣ Utilizar as anotações e métodos de asserção aprendidos (@Test, @BeforeEach, assertEquals, assertTrue, etc.).
-4️⃣ Identificar erros no código e corrigi-los.
-
-📌 Alguns possíveis problemas para verificar:
-✅ O sistema permite adicionar um produto com quantidade negativa?
-✅ O sistema lida corretamente com produtos inexistentes ao consultar/remover?
-✅ A remoção de produtos não deixa o estoque com valores inválidos?
-
+```
 
 ---
 
-📌 Exemplo de Teste (comece com algo assim e expanda!)
+## 📝 O que você deve fazer?
 
+1️⃣ Criar um arquivo de teste `JUnit` chamado `EstoqueTest.java`.   
+2️⃣ Criar métodos de teste para cada funcionalidade do estoque.   
+3️⃣ Utilizar as anotações e métodos de asserção aprendidos (`@Test`, `@BeforeEach`, `assertEquals`, `assertTrue`, etc.).   
+4️⃣ Identificar erros no código e corrigi-los.   
+
+## 📌 Alguns possíveis problemas para verificar:
+
+✅ O sistema permite adicionar um produto com quantidade negativa?   
+✅ O sistema lida corretamente com produtos inexistentes ao consultar/remover?   
+✅ A remoção de produtos não deixa o estoque com valores inválidos?   
+
+---
+
+## 📌 Exemplo de Teste (comece com algo assim e expanda!)
+
+```java
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -95,15 +92,15 @@ class EstoqueTest {
         assertEquals(5, estoque.consultarEstoque("Arroz"));
     }
 }
-
+```
 
 ---
 
-🏁 Conclusão
+## 🏁 Conclusão
 
-🛠️ Escreva testes para cada funcionalidade.
-🔍 Descubra os erros no código!
-🐛 Corrija os bugs e garanta que tudo funcione corretamente.
+- **🛠️ Escreva testes para cada funcionalidade.**   
+- **🔍 Descubra os erros no código!**   
+- **🐛 Corrija os bugs e garanta que tudo funcione corretamente.**   
 
-🚀 Boa sorte!
+**🚀 Boa sorte!**
 
